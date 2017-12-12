@@ -10,12 +10,12 @@ requirejs.config({
     }
 });
 requirejs(["jquery","skill"],function ($,skill) {
-
+console.log("alsdj")
         var skillaaa = {
-        dizhi:$(".z"),
+        dizhi:$("#z"),
         baifenbi:50
     };
     var asd = new skill(skillaaa);
     asd.init();
-    console.log("askdj")
+    console.log("askdj");
     });

@@ -93,10 +93,10 @@ define(['jquery'], function ($) {
            }
          }.bind(this));
         $(this.$hover).on("click",(function () {
-        window.location.href="project/"+this.df.dizhi
+        window.location.href="projects/"+this.df.dizhi
     }.bind(this)));
         $(this.$icon).on("click",(function () {
-            window.location.href="project/"+this.df.dizhi
+            window.location.href="projects/"+this.df.dizhi
         }.bind(this)))
     };
 

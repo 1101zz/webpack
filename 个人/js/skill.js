@@ -13,7 +13,7 @@ define(['jquery'], function ($) {
         dizhi:$("#b"),
         baifenbi:75,
     }
-       this.$i=$("<div class='i'></div>")
+         this.$i=$("<div class='i'></div>")
         this.$span=$("<span class='e'></span>")
         this.$canvas=$("<canvas class='canvas'></canvas>")
         this.$index=c
