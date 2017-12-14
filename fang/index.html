@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+           margin: 0;
+            list-style: none;
+        }
+        .warper{
+            width: 82%;
+            margin: auto;
+        }
+        li{
+            float: left;
+        }
+        .language li{
+            margin-right:15px;
+            padding:0
+        }
+        #bg{
+            width: 100%;
+            height: 980px;
+            background-image: url("img/shadow.png");
+            background-size: cover;
+            z-index: -1;
+            position: absolute;
+        }
+        #title{
+            background-image: url("img/bgimg.png");
+            color: #ffffff;
+        }
+        #title-main{
+            margin-left:26%
+        }
+        #title-main li{
+            margin-right: 30px;
+        }
+        #nav{
+            height: 112px;
+            line-height: 112px;
+        }
+        #nav-img{
+            float: right;
+        }
+        #nav-img li{
+            float: right;
+            line-height: 112px;
+            margin:48px 32px 0 0;
+            display: block;
+            width: 16px;
+            height: 16px;
+        }
+        .mail{
+            background-image: url("img/title-sprite.png");
+            background-position:0 0;
+        }
+        .twitter{
+            background-image: url("img/title-sprite.png");
+            background-position:-16px 0;
+        }
+        .facebook{
+            background-image: url("img/title-sprite.png");
+            background-position:-32px 0;
+        }
+        .language{
+            height: 112px;
+            float: left;
+            padding:0
+        }
+        .left,.right {
+            margin-top:64px;
+            display: block;
+            border-radius: 50%;
+            width: 72px;
+            height: 72px;
+            border: 1px solid #ffffff;
+        }
+        .left{
+        float: left
+        }
+        .right{
+        float: right;
+        }
+        .left span,.right span{
+            display: block;
+            width: 32px;
+            height: 24px;
+            margin: auto;
+            margin-top:50%;
+            position: relative;
+            top:-12px
+        }
+        .left span{
+            background-image: url("img/title-sprite.png");
+            background-position: -68px 0;
+        }
+        .right span{
+            background-image: url("img/title-sprite.png");
+            background-position: -68px -30px;
+        }
+        .main{
+             margin:0 72px ;
+            text-align: center;
+            margin-top:290px;
+            padding-bottom: 318px;
+        }
+        .main h1{
+            font-size: 50px;
+        }
+        .main span{
+            display: block;
+            margin: auto;
+            width: 64px;
+            height: 64px;
+            background-image: url("img/title-sprite.png");
+            background-position: 0 -22px;
+        }
+        .main p{
+            margin-top:24px ;
+            color:#a09997
+        }
+        #mail-send{
+            color:#ffffff;
+            display: block;
+            height: 166px;
+            background: #3b3d40;
+            position: relative;
+        }
+        #mail-send span{
+            margin-top:-25px;
+            position: absolute;
+            top:50%;
+            line-height: 50px;
+            width: 21%;
+            height: 50px;
+            background: #585a5c;
+            border-radius: 5px;
+            padding-left:18px ;
+
+        }
+        #mail-send select{
+            color: #ffffff;
+            margin-left: 24%;
+            margin-top:-25px;
+            position: absolute;
+            top:50%;
+            line-height: 50px;
+            width: 44%;
+            height: 50px;
+            background: #585a5c;
+            padding-left:18px ;
+            border: 0;
+            border-radius: 5px;
+        }
+        #mail-send input{
+            color: #ffffff;
+            margin-top: -25px;
+            position: absolute;
+            top:50%;
+            margin-left: 70%;
+            line-height: 50px;
+            width: 186px;
+            height: 50px;
+            background: #2e71f2;
+            border: 0;
+            border-radius: 40px;
+        }
+        #bottom-title{
+            margin-top: 110px;
+            text-align: center;
+        }
+        #bottom-title h1{
+            margin-top:10px;
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #3b3d40;
+        }
+        #bottom-title p{
+            color:#3b3d40
+        }
+        #bottom-ul{
+            display: flex;
+            margin: 50px;
+            padding-bottom:50px ;
+        }
+        #bottom-ul li{
+            flex:1;
+            text-align: center;
+        }
+        #bottom-ul span{
+            display: block;
+            width: 30px;
+            height: 25px;
+            margin:22px auto ;
+        }
+        #bottom p{
+            margin-top:10px
+        }
+        #bottom-ul p{
+            color:#616365;
+        }
+        .experience{
+            background:url("img/bottom-sprite.png");
+            background-position: 0 0;
+        }
+        .ourFutuer{
+            background:url("img/bottom-sprite.png");
+            background-position: -38px 0;
+        }
+        .academicTalents{
+            background:url("img/bottom-sprite.png");
+            background-position: -72px 0;
+        }
+        .brilliantMinds{
+            background:url("img/bottom-sprite.png");
+            background-position: -100px 0;
+        }
+    </style>
+</head>
+<body>
+<div id="bg">
+</div>
+<div id="title">
+    <div class="warper">
+    <div id="nav">
+        <ul class="language">
+                <li>RU/</li>
+                <li>EN</li>
+        </ul>
+        <ol id="title-main">
+            <li>PROJECTS</li>
+            <li>ABOUT US</li>
+            <li>STORIES</li>
+            <li>CONTACT</li>
+        </ol>
+           <ul id="nav-img">
+               <li class="mail"></li>
+               <li class="twitter"></li>
+               <li class="facebook"></li>
+           </ul></div>
+    </div>
+    <div id="title_main">
+        <div class="warper">
+        <div class="left">
+            <span></span>
+        </div>
+            <div class="right">
+            <span></span>
+        </div>
+            <div class="main">
+                <span></span>
+                <h1>We Build Objects <br>And Spaces</h1>
+                <p>Support bright students today for<br>
+                a better tomorrow</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mail-send">
+    <div class="warper">
+    <form action="">
+        <span>E-mail</span>
+        <select name="a" id="a">
+            <option value="">Investment</option>
+            <option value=""></option>
+        </select>
+        <input type="submit" value="LET’S START">
+    </form>
+    </div>
+</div>
+<div id="bottom">
+    <div class="warper">
+        <div id="bottom-title">
+            <img src="img/bottom-title.png" alt="">
+            <h1>Your Next Move</h1>
+            <p>Helping talented students unlock their full <br>potential.Help us help them thrive</p>
+        </div>
+        <ul id="bottom-ul">
+        <li><span class="experience"></span><h6>experience</h6><p>72% of the students <br>attend on scholarship</p></li>
+        <li><span class="ourFutuer"></span><h6>our futuer</h6><p>20% of its student body is <br> currently under scholarship</p></li>
+        <li><span class="academicTalents"></span><h6>academic talents</h6><p>More than 1000 scholarships<br>have been awarded</p></li>
+        <li><span class="brilliantMinds"></span><h6>brilliant minds </h6><p>Anatolia College has always <br>relied on donations</p></li>
+      </ul>
+    </div>
+
+</div>
+<script src=""></script>
+<script>
+
+
+</script>
+</body>
+</html>

@@ -96,18 +96,5 @@ requirejs(["jquery","xiangmu"],function ($,xiangmu) {
     };
     var asd8=new xiangmu(shuxing8);
     asd8.init();
-    $(window).resize(function () {
-        $("#one").child().remove();
-        $("#two").child().remove();
-        $("#three").child().remove();
-        asd.init();
-        asd1.init();
-        asd2.init();
-        asd3.init();
-        asd4.init();
-        asd5.init();
-        asd6.init();
-        asd7.init();
-        asd8.init();
-    })
+  
 });

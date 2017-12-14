@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    let str =
+        `奴隶社会,非洲,古埃及文明,金字塔
+,亚洲,两河流域文明,汉谟拉比法典
+,,古印度,种姓制度
+,,,佛教的创立
+,欧洲,希腊,希腊城邦
+,,,雅典民主
+,,罗马,城邦
+,,,帝国的征服与扩展
+,,希腊罗马古典文化,建筑艺术
+,,,公历`;
+    str2json(str);
+
+    function str2json(str) {
+        var data;
+        var arr1 = str.split('\n');
+        for (var i = 0; i < arr1.length; i++) {
+            arr1[i]=arr1[i].split(",")
+        }
+        for(var j=arr1.length-1;j>0;j--){
+            for(var z=arr1[j].length-1;z>0;z--)
+            if(arr1[j][z-1]!=''){
+
+                arr1[j][z-1].filed1=[arr1[j][z]]
+                console.log(arr1[j][z-1])
+            }
+        }
+    }
+</script>
+</body>
+</html>
